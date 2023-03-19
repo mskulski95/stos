@@ -1,60 +1,98 @@
-// let dragged = null;
+document.querySelector('.chair-blue').addEventListener('touchstart', function (e) {
 
-// const source = document.getElementsByClassName('chair-blue');
-// source.addEventListener('dragstart', (e) => {
-//     dragged = e.target;
-// });
+    e.target.style.position = 'fixed';
+    e.target.style.top = e.touches[0].clientY;
+    e.target.style.left = e.touches[0].clientX;
+})
 
-// const target = document.getElementById('droptarget');
-// target.addEventListener('dragover', (e) => {
-//     e.preventDefault();
-// });
 
-// target.addEventListener('drop', (e) => {
-//     e.preventDefault();
-//     if(e.target.className === 'dropzone') {
-//         dragged.parentNode.removeChild(dragged);
-//         e.target.appendChild(dragged);
+document.querySelector('.chair-blue').addEventListener('touchmove', function (e) {
+
+    e.target.style.top = e.touches[0].clientY + 'px';
+    e.target.style.left = e.touches[0].clientX + 'px';
+})
+
+
+document.querySelector('.chair-blue').addEventListener('touchend', function (e) {
+    if (e.target) {
+        e.target.style.top = '';
+        e.target.style.left = '';
+
+        e.target = null;
+
+    }
+})
+
+document.querySelector('.chair-green').addEventListener('touchstart', function (e) {
+
+    e.target.style.position = 'fixed';
+    e.target.style.top = e.touches[0].clientY;
+    e.target.style.left = e.touches[0].clientX;
+})
+
+
+document.querySelector('.chair-green').addEventListener('touchmove', function (e) {
+
+    e.target.style.top = e.touches[0].clientY + 'px';
+    e.target.style.left = e.touches[0].clientX + 'px';
+})
+
+
+document.querySelector('.chair-green').addEventListener('touchend', function (e) {
+    if (e.target) {
+        e.target.style.top = '';
+        e.target.style.left = '';
+
+        e.target = null;
+
+    }
+})
+
+
+document.querySelector('.chair-red').addEventListener('touchstart', function (e) {
+
+    e.target.style.position = 'fixed';
+    e.target.style.top = e.touches[0].clientY;
+    e.target.style.left = e.touches[0].clientX;
+})
+
+
+document.querySelector('.chair-red').addEventListener('touchmove', function (e) {
+
+    e.target.style.top = e.touches[0].clientY + 'px';
+    e.target.style.left = e.touches[0].clientX + 'px';
+})
+
+document.querySelector('.chair-red').addEventListener('touchend', function (e) {
+    if (e.target) {
+        e.target.style.top = '';
+        e.target.style.left = '';
+
+        e.target = document.querySelector('.dropzone');
+
+    }
+})
+
+document.querySelector('.chair-blue2').addEventListener('touchstart', function (e) {
+
+    e.target.style.position = 'fixed';
+    e.target.style.top = e.touches[0].clientY;
+    e.target.style.left = e.touches[0].clientX;
+})
+
+document.querySelector('.chair-blue2').addEventListener('touchmove', function (e) {
+
+    e.target.style.top = e.touches[0].clientY + 'px';
+    e.target.style.left = e.touches[0].clientX + 'px';
+})
+
+// document.querySelector('.chair-blue2').addEventListener('touchend', function (e) {
+//     if (e.target) {
+//         e.target.style.top = '';
+//         e.target.style.left = '';
+
+//         e.target = null;
+
 //     }
-// });
-
-
-// let dragged;
-
-// const source = document.getElementsByClassName('chair-blue');
-// source.addEventListener('drag', () => {
-//     console.log('dragging');
 // })
-
-// source.addEventListener('dragstart', (e) => {
-//     dragged = e.target;
-//     e.target.classList.add('dragging');
-// });
-
-// source.addEventListener('dragend', (e) => {
-//     e.target.classList.remove(dragging);
-// });
-
-// const target = document.getElementById('droptarget');
-// target.addEventListener('dragover', (e) => {
-//     e.preventDefault();
-// }, false);
-
-// target.addEventListener('dragenter', (e) => {
-//     e.target.classList.add('dragover');
-// })
-
-// target.addEventListener('dragleave', (e) => {
-//     if (e.target.classList.contains('dropzone')) {
-//         e.target.classList.remove('dragover');
-//     }
-// });
-
-// target.addEventListener('drop', (e) => {
-//     e.preventDefault();
-//     if (e.target.classList.contains('dropzone')) {
-//         e.target.classList.remove('dragover');
-//         e.target.appendChild(dragged)
-//     }
-// });
 

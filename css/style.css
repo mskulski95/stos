@@ -166,7 +166,7 @@ span.text-1 img {
 span.text-3 img {
     bottom: 20%;
     animation-name: show-fast;
-    animation-duration: 3s;
+    animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
 }
@@ -174,7 +174,7 @@ span.text-3 img {
 span.text-4 img {
     bottom: 5%;
     animation-name: show-slow;
-    animation-duration: 3s;
+    animation-duration: 13s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
 }
@@ -194,6 +194,7 @@ span.button img {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
 
 @keyframes resize {
     0%{
@@ -224,22 +225,33 @@ span.button img {
         transform: scale(0);
     }
     50%{
-        transform: scale(1);
+        transform: scale(0);
     }
     100%{
         transform: scale(1);
     }
 }
 
-.dropzone.dragover {
-    background-color: blue;
-}
+@keyframes hide {
+    0%{
+        transform: scale(1);
+    }
+    15%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(0);
+    }
+} 
 
-.dragging{
-    opacity: 0.5;
-}
 
-
+/* .stos-text-1 img, .chairs img{
+    animation-name: hide;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+} */
 
 /* .stos-box {
     display: none;
