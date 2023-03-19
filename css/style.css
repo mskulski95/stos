@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+span.logo-title {
+    display: flex;
+    justify-content: center;
+}
+
+span.logo-title img{
+    max-width: 50%;
+}
+
+button.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+button.close img {
+    max-width: 30px;
+}
+
+.babel-text {
+    display: flex;
+    justify-content: center;
+}
+
+.babel-text img {
+    max-width: 70%;
+}
+
+.babel-1 img {
+    height: 140px;
+    position: fixed;
+    left: 90%;
+    top: 10%;
+}
+
+.babel-2 img {
+    height: 250px;
+    position: fixed;
+    right: 85%;
+    top: 20%;
+}
+
+.babel-3 img {
+    height: 100px;
+    position: fixed;
+    left: 80%;
+    top: 60%;
+}
+
+.babel-4 img {
+    height: 100px;
+    position: fixed;
+    right: 85%;
+    top: 70%;
+}
+
+.babel-5 img {
+    height: 100px;
+    position: fixed;
+    left: 10%;
+    bottom: -80px;
+}
+
+@keyframes swim {
+    0% {
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(5px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+span.babel img{
+    animation-name: swim;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+span.stos {
+    display: flex;
+    justify-content: center;
+}
+
+span.stos img {
+    max-width: 80%;
+    position: fixed;
+    top: 20%;
+}
+
+.stos-text-1 span {
+    display: flex;
+    justify-content: center;
+}
+
+.stos-text-2 span {
+    display: flex;
+    justify-content: center;
+}
+
+.chairs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.chairs-shine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+span.chair img {
+    position: fixed;
+    bottom: 20px;
+    max-width: 50px;
+}
+
+span.chair img:hover{
+    max-width: 60px;
+}
+
+
+span.pudelko {
+    display: flex;
+    justify-content: center;
+}
+
+span.pudelko img {
+    max-width: 50%;
+    position: fixed;
+    top: 30%;
+}
+
+.pudelko-text span {
+    display: flex;
+    justify-content: center;
+}
+
+span.copy img{
+    max-width: 60%;
+    position: fixed;
+}
+
+span.text-1 img {
+    bottom: 20%;
+}
+
+span.text-3 img {
+    bottom: 20%;
+    animation-name: show-fast;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+span.text-4 img {
+    bottom: 5%;
+    animation-name: show-slow;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+span.text-5 img {
+    bottom: 20%;
+}
+
+span.text-6 img {
+    bottom: 15%;
+}
+
+span.button img {
+    bottom: 5%;
+    animation-name: resize;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes resize {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes show-slow {
+    0%{
+        transform: scale(0);
+    }
+    75%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes show-fast {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.dropzone.dragover {
+    background-color: blue;
+}
+
+.dragging{
+    opacity: 0.5;
+}
+
+
+
+/* .stos-box {
+    display: none;
+} */
+.pudelko-box {
+    display: none;
+}
+
+/* .stos-text-1, .chairs {
+    display: none;
+} */
+
+.stos-text-2 {
+    display: none;
+}
+
+.chairs-shine {
+    display: none;
+}
